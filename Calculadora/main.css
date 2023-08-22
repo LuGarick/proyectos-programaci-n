@@ -1,0 +1,74 @@
+body {
+    background-color: antiquewhite;
+    width: 100%;
+}
+/*main{
+    width: 540;
+}*/
+.content_calculator {
+    background-color: #ADA3B2;
+    padding:3px 0 0 3px ;
+    height: 440px;
+    max-width: 520px;
+    width: auto;   
+    border-radius: 2%; 
+}
+
+.monitor {
+    background-color: rgb(250, 242, 243);
+    border-radius: 4px;
+    width: 490px;
+    height: 100px;
+    top: 0;
+    margin: 3px;
+    font-size: 30px;
+}
+/*Parte de los numeros CSS*/
+.number { 
+    display: flex;
+    height: auto;
+    width: 500px;
+    
+}
+.contenido_numero {
+    display:grid;
+    width: 400px;
+    grid-template-columns: repeat(3,120px);
+    gap: 8px;
+    
+    
+}
+.contenido_numero input{
+    color: blueviolet;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    margin-bottom: 5px;
+    border-radius: 4%;
+}
+.contenido_numero input:hover{
+    background-color:#FFF3BF;
+}
+/*Parte del separador entre numeros y signos*/
+.separar{
+    height: auto;
+    width: 40px;
+}
+/*Parte de los signos CSS*/
+.signal{
+    display: grid;
+    grid-template-columns: 80px;
+    gap: 5px;
+}
+.signal input{
+    color: blueviolet;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 4%;
+}
+.signal input:hover{
+    background-color:#FFF3BF;
+}
+      
+    
+
