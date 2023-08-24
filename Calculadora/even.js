@@ -12,4 +12,4 @@ const num9 = document.querySelector('input[value="9"]');
 const num0 = document.querySelector('input[value="0"]');
 //Variables signos
 const mas = document.querySelector('input[value="+"]');
-
+/*variables */
