@@ -1,17 +1,29 @@
 body {
     background-color: antiquewhite;
     width: 100%;
+    height: 100vb;
+    
 }
-/*main{
-    width: 540;
-}*/
+main{
+     display: flex;  
+     justify-content: center;
+     align-items: center;
+     /*position: relative;*/
+     
+}
 .content_calculator {
-    background-color: #ADA3B2;
+    /*background-color: #dacce0 ;*/
+    background-image: linear-gradient(to top,#dacce0, #c8a0da);
     padding:3px 0 0 3px ;
     height: 440px;
     max-width: 520px;
     width: auto;   
     border-radius: 2%; 
+/*position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);*/
+    
 }
 
 .monitor {
@@ -28,7 +40,7 @@ body {
     display: flex;
     height: auto;
     width: 500px;
-    
+
 }
 .contenido_numero {
     display:grid;
@@ -40,14 +52,15 @@ body {
 }
 .contenido_numero input{
     color: blueviolet;
-    font-size: large;
+    font-size: 22px;
     font-weight: bold;
-    padding: 20px;
+    padding: 18px;
     margin-bottom: 5px;
     border-radius: 4%;
 }
 .contenido_numero input:hover{
     background-color:#FFF3BF;
+    cursor: pointer;
 }
 /*Parte del separador entre numeros y signos*/
 .separar{
@@ -62,12 +75,14 @@ body {
 }
 .signal input{
     color: blueviolet;
-    font-size: large;
+    font-size: 23px;
     font-weight: bold;
     border-radius: 4%;
+    
 }
 .signal input:hover{
     background-color:#FFF3BF;
+    cursor: pointer;
 }
       
     
