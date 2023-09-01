@@ -50,7 +50,7 @@ main{
     
     
 }
-.contenido_numero input{
+.numbers{
     color: blueviolet;
     font-size: 22px;
     font-weight: bold;
@@ -58,7 +58,7 @@ main{
     margin-bottom: 5px;
     border-radius: 4%;
 }
-.contenido_numero input:hover{
+.numbers:hover{
     background-color:#FFF3BF;
     cursor: pointer;
 }
@@ -73,14 +73,14 @@ main{
     grid-template-columns: 80px;
     gap: 5px;
 }
-.signal input{
+.signals{
     color: blueviolet;
     font-size: 23px;
     font-weight: bold;
     border-radius: 4%;
     
 }
-.signal input:hover{
+.signals:hover{
     background-color:#FFF3BF;
     cursor: pointer;
 }

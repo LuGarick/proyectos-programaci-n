@@ -1,15 +1,21 @@
 'use strict'
 // Variables numeros
-const num1 = document.querySelector('input[value="1"]');
-const num2 = document.querySelector('input[value="2"]');
-const num3 = document.querySelector('input[value="3"]');
-const num4 = document.querySelector('input[value="4"]');
-const num5 = document.querySelector('input[value="5"]');
-const num6 = document.querySelector('input[value="6"]');
-const num7 = document.querySelector('input[value="7"]');
-const num8 = document.querySelector('input[value="8"]');
-const num9 = document.querySelector('input[value="9"]');
-const num0 = document.querySelector('input[value="0"]');
+const numeros = document.querySelectorAll(".numbers");
 //Variables signos
-const mas = document.querySelector('input[value="+"]');
+const signos = document.querySelectorAll(".signals");
+//pantalla
+let pantalla = document.querySelector('.monitor')
+
+let valor1;
+let agrupacion ="";
+let transformar = 0;
+numeros.forEach(elemento => {
+    elemento.addEventListener('click', () =>{
+        valor1 = parseInt(elemento.value);
+        console.log(valor1);
+        agrupacion += String(valor1);
+        transformar = parseInt(agrupacion);
+        pantalla.value = agrupacion
+    })
+})
 
