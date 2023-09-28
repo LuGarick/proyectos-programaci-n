@@ -80,6 +80,26 @@ main{
     border-radius: 4%;
     
 }
+.reset{
+    color: blueviolet;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4%;
+}
+.resultado{
+    color: blueviolet;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 4%;
+}
+.resultado:hover{
+    background-color:#FFF3BF;
+    cursor: pointer;
+}
+.reset:hover{
+    background-color:#FFF3BF;
+    cursor: pointer;
+}
 .signals:hover{
     background-color:#FFF3BF;
     cursor: pointer;

@@ -7,9 +7,8 @@ const signos = document.querySelectorAll(".signals");
 let pantalla = document.querySelector('.monitor');
 let borrar = document.querySelector(".reset");
 let resultado = document.querySelector(".resultado");
-let operador;
-let digito1 = 0;
-let digito2 = 0;
+let valorfinal = 0;
+let operador, operar;
 let valor1;
 let agrupacion ="";
 let transformar = 0;
@@ -19,23 +18,30 @@ numeros.forEach(elemento => {
         console.log(valor1);
         agrupacion += String(valor1);
         transformar = parseInt(agrupacion);
-        pantalla.value = agrupacion
+            pantalla.value += valor1
+ 
     })
 })
 
 borrar.addEventListener('click', () =>{
-    
     pantalla.value = '';
     agrupacion = '';
     transformar = undefined;
+    valorfinal = 0;
 })
 
 signos.forEach(elemento =>{
     elemento.addEventListener('click', () =>{
         operador = elemento.value
-        if(digito1 = 0){
-            digito1 = transformar;
-        }
-
+        pantalla.value += operador
     })
 } )
+
+resultado.addEventListener('click', () =>{
+    try{
+        valorfinal = eval(pantalla.value)
+        pantalla.value = valorfinal
+    }catch(error){
+        pantalla.value = 'Error'
+    }
+})
